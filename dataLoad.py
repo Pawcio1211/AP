@@ -18,6 +18,7 @@ def loaddata():
 def loadJson(patch):
     with open(patch,'r') as f:
         data = json.load(f)
+        print("1")
 
     now = datetime.now().strftime("%H:00:00")
     for i in data["days"][0]["hours"]:
